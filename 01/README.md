@@ -83,15 +83,15 @@ $ juice = "apple";
 
 ##### Access to a character in a string
 Characters in a string can be accessed and modified bydefining them offset of the line starting from beginning
-* `$str = 'This is a test.'; `
+  `$str = 'This is a test.';`
 * Get the first character string 
-  * `$first = $str {0}; `
+  `$first = $str {0};`
 * Get the third character strings 
-  * `$third = $str {2}; `
+  `$third = $str {2};`
 * Get the last character string 
-  * `$last = $str {strlen ($str) -1}; `
+  `$last = $str {strlen ($str) -1};`
 * Change the last character of a string 
-  * `$str {strlen ($str) -1} = '!';`
+  `$str {strlen ($str) -1} = '!';`
 ---
 
 
