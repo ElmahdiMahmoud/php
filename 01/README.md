@@ -1,6 +1,6 @@
 ## Syntax
 
-### PHP tags
+### Tags
 
 ```php
 /* Recommended  */
@@ -13,7 +13,7 @@
 <% echo 'ASP tag style'; %>
 ```
 
-### PHP Comments
+### Comments
 
 > PHP supports style comments  'C', 'C++' and shell Unix (style Perl)
 
@@ -24,6 +24,18 @@
 
 / * This is a multiline comment 
 another line of comment * /
+```
+
+### Outputs
+
+`echo "Hello World!";` and `print("Hello World!");`
+
+```php
+print "print can be used without parentheses.";
+
+echo 'one', 'two', 'three';
+
+echo strftime('%d-%B-%Y, %A');
 ```
 
 ---
