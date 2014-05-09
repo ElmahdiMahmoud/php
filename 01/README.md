@@ -42,11 +42,46 @@ echo strftime('%d-%B-%Y, %A');
 
 ### Operators 
 
+The assignment operator
+```php
+$x = 10;
+$x = $x + 15; // $x  = 25
+
+# output
+print $x;
+
+# delete $x
+unset($x);
+
+```
+
+
+---
+
 ### Variables 
+
+* Variables in PHP start with a  dollar sign `$`
+* variable name **must begin** with a letter or underscore 
+* Subsequent characters in a variable name can be letters, numbers or symbols underscores in any quantity 
+* The variable name is **case sensitive**
+
+```php
+$name = "MyName";
+```
+> `<?php echo $name?></h1>`
+
+---
+
 
 ### Constants 
 
+---
+
+
 ### Types 
+
+---
+
 
 ### Control structures 
 
