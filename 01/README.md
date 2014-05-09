@@ -67,8 +67,10 @@ unset($x);
 
 ```php
 $name = "MyName";
+
+<h1><?php echo $name?></h1>
 ```
-> `<?php echo $name?></h1>`
+
 
 ---
 
