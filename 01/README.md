@@ -1,6 +1,6 @@
 ## Syntax
 
-### Tags
+**Tags**
 
 ```php
 /* Recommended  */
@@ -13,7 +13,7 @@
 <% echo 'ASP tag style'; %>
 ```
 
-### Comments
+**Comments**
 
 > PHP supports style comments  'C', 'C++' and shell Unix (style Perl)
 
@@ -26,7 +26,7 @@
 another line of comment * /
 ```
 
-### Outputs
+**Outputs**
 
 `echo "Hello World!";` and `print("Hello World!");`
 
@@ -52,7 +52,6 @@ print $x;
 
 # delete $x
 unset($x);
-
 ```
 
 ---
@@ -70,9 +69,8 @@ $name = "MyName";
 <h1><?php echo $name?></h1>
 ```
 
-Screening variables
-
-$ juice = "apple"; 
+* Screening variables
+  * $juice = "apple"; 
 * What is the result of the following code? 
   * `echo "He drank some $ juice juice.";`
   * `echo "He drank some juice made of $ juices.";` 
@@ -80,8 +78,8 @@ $ juice = "apple";
   * `echo "He drank some juice made of {$ juice} s.";`
   * `echo "He drank some juice made of $ {juice} s.";`
   
+**Access to a character in a string**
 
-##### Access to a character in a string
 Characters in a string can be accessed and modified bydefining them offset of the line starting from beginning
   `$str = 'This is a test.';`
 * Get the first character string 
