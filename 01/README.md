@@ -70,11 +70,43 @@ $name = "MyName";
 <h1><?php echo $name?></h1>
 ```
 
+Screening variables
 
+$ juice = "apple"; 
+* What is the result of the following code? 
+  * `echo "He drank some $ juice juice.";`
+  * `echo "He drank some juice made of $ juices.";` 
+* Problem Solving 
+  * `echo "He drank some juice made of {$ juice} s.";`
+  * `echo "He drank some juice made of $ {juice} s.";`
+  
+
+##### Access to a character in a string
+Characters in a string can be accessed and modified bydefining them offset of the line starting from beginning
+* `$str = 'This is a test.'; `
+* Get the first character string 
+  * `$first = $str {0}; `
+* Get the third character strings 
+  * `$third = $str {2}; `
+* Get the last character string 
+  * `$last = $str {strlen ($str) -1}; `
+* Change the last character of a string 
+  * `$str {strlen ($str) -1} = '!';`
 ---
 
 
 ### Constants 
+
+* Constants can be determined by using the define (), and not assigning values 
+  * `define ("CONSTANT", "Hello world."); `
+  * `const CONSTANT = "Hello World."; // PHP 5.3 `
+* Constants do not have a dollar sign ($) 
+  * `echo CONSTANT; // Outputs "Hello, world." `
+* Constants may be defined and accessed anywhere without accounting scope 
+* Constants may not be redefined or undefined once initial announcement 
+* Constants may only evaluate to scalar values 
+* Declare constant insensitive 
+  * `define ("CONSTANT", "Hello World.", True);`
 
 ---
 
@@ -132,9 +164,52 @@ Float
   * `echo "There will be translated into \ n new line.";` 
 * Outputs: screening "inside" double quotes 
   * `echo "screening \" in \ "double quotes.";`
+  
+
+##### Type: string (single quotes)
+
+* In contrast to the double-quote syntax, variables, and escape sequences for special characters enclosed in single quotes, not processed 
+  * `$juice = "apple";` 
+* Outputs: He drank some $ juice juice 
+  * echo 'He drank some $ juice juice.'; 
+* Outputs: There will be translated into \ n new line 
+  * echo 'Here is a translation from a \ n new line.'; 
+* Outputs: screening 'inside' single quotes 
+  * echo 'screening \' in \ 'single quotes.';
+  
+
+##### Type: string (heredoc)
+```php
+echo <<< LABEL
+My name is "$ name". Newline .
+Before the line is worth a tab character.
+This should print a capital 'A': \ x41
+LABEL;
+```
+* The identifier must contain only alphanumeric characters and underscores, and must start with a digit ( sign underscore allowed )
+* After `<<<` operator , an identifier , and then only line feed
+* The closing identifier **must** be in the first column of the line
+* line with the closing identifier **must** not contain other characters, except possibly a semicolon (`;`)
+  
+
+##### Type: string (NULL)
+The special NULL value represents variable without values​ 
+* NULL - the only possible value of type NULL 
+* A variable is **null**, if: 
+  * it has been assigned the constant `NULL`
+  * it has not been assigned any value 
+  * it was removed by the `unset ()`
+* `$ var = NULL;`
 
 ---
 
 
 ### Control structures 
 
+If the string is enclosed in double quotes, PHP recognizes escape sequences for special characters: 
+* `\n` linefeed (LF or 0x0A (10) in ASCII) 
+* `\r` carriage return (CR or 0x0D (13) in ASCII) 
+* `\t` horizontal tab (HT or 0x09 (9) in ASCII) 
+* `\\` backslash 
+* `\$` dollar sign 
+* `\"` double quote
