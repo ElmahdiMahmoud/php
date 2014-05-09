@@ -84,17 +84,17 @@ $name = "MyName";
 PHP - dynamically typed language (loosely typed) 
 
 * PHP supports eight primitive types 
-  * Four scalar types: 
-    * boolean 
-    * integer 
-    * float (floating point number) 
-    * string 
+* Four scalar types: 
+  1. boolean 
+  2. integer 
+  3. float (floating point number) 
+  4. string 
 * Two compound types: 
-  * array 
-  * object 
+  1. array 
+  2. object 
 * Two special types: 
-  * resource 
-  * NULL
+  1. resource 
+  2. NULL
 
 ##### Type: boolean
 
@@ -106,7 +106,7 @@ PHP - dynamically typed language (loosely typed)
 
 ##### Type: integer and floats
 
-* Integer 
+Integer
 ```php
     $i = 1234; // Decimal number
     $i = -123; // A negative number 
@@ -114,12 +114,25 @@ PHP - dynamically typed language (loosely typed)
     $i = 0x1A; // 26 hex 
     $i = 0b101; // Binary 5 (PHP 5.4) 
 ```
-* Float 
+
+Float
 ```php
    $f = 1.234; 
    $f = 1.2e3; // 1200 
    $f = 7E-10; // 0.0000000007
 ```
+
+##### Type: string (double quotes)
+
+* If the string is specified in double quotes, variables parsed within it 
+  * `$juice = "apple";` 
+* Outputs: He drank some apple juice 
+  * `echo "He drank some $ juice juice.";` 
+* Outputs: There will be a newline 
+  * `echo "There will be translated into \ n new line.";` 
+* Outputs: screening "inside" double quotes 
+  * `echo "screening \" in \ "double quotes.";`
+
 ---
 
 
