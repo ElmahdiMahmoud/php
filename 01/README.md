@@ -55,7 +55,6 @@ unset($x);
 
 ```
 
-
 ---
 
 ### Variables 
@@ -82,6 +81,45 @@ $name = "MyName";
 
 ### Types 
 
+PHP - dynamically typed language (loosely typed) 
+
+* PHP supports eight primitive types 
+  * Four scalar types: 
+    * boolean 
+    * integer 
+    * float (floating point number) 
+    * string 
+* Two compound types: 
+  * array 
+  * object 
+* Two special types: 
+  * resource 
+  * NULL
+
+##### Type: boolean
+
+* This is the simplest type
+* expresses a truth value: `TRUE` or `FALSE` 
+* Keywords TRUE and FALSE are case independent 
+* Assign **$foo** the value **TRUE**
+  * `$foo = True;`
+
+##### Type: integer and floats
+
+* Integer 
+```php
+    $i = 1234; // Decimal number
+    $i = -123; // A negative number 
+    $i = 0123; // 83 octal 
+    $i = 0x1A; // 26 hex 
+    $i = 0b101; // Binary 5 (PHP 5.4) 
+```
+* Float 
+```php
+   $f = 1.234; 
+   $f = 1.2e3; // 1200 
+   $f = 7E-10; // 0.0000000007
+```
 ---
 
 
